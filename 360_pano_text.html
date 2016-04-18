@@ -5,17 +5,20 @@
     <title>Hello, World! • A-Frame</title>
     <meta name="description" content="Hello, World! • A-Frame">
     <script src="aframe.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
   </head>
   <body>
     <a-scene>
-        <a-box id="mybox" color="#6173F4" width="1" height="1"
-               depth="1" position="1 1 1" rotation="0 0 0" scale="1 1 1">
-           <a-animation attribute="rotation" repeat="indefinite" to="0 180 0"></a-animation>
-        </a-box>
+
+        <a-entity text="text: Real"
+                material="color: #66E1B4"
+                position="0 0 -5"
+                id="mybox"></a-entity>
 
         <a-camera position="0 0 0">
             <a-cursor color="#0000ff">
         </a-camera>
+        <a-sky src="PANO_20131018_125514.jpg" rotation="0 -90 0"></a-sky>
     </a-scene>
   </body>
 </html>
