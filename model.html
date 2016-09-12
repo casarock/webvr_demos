@@ -12,11 +12,7 @@
             <a-asset-item id="mercedes-gla" src="models/gla/gla.dae"></a-asset-item>
         </a-assets>
 
-        <!--a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000" easing="linear" repeat="inifite"></a-animation-->
-       <a-collada-model position="-25 -10 -48" rotation="0 0 0" src="#mercedes-gla">
-           <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000" easing="linear" repeat="inifite"></a-animation>
-       </a-collada-model>
-
+        <a-collada-model position="4 -0.5 -5" rotation="0 -20 0" src="#mercedes-gla"></a-collada-model>
 
         <a-light type="directional" color="#fff" intensity="0.8" position="-1 2 1"></a-light>
         <a-light type="ambient" color="#fff"></a-light>
@@ -24,20 +20,7 @@
         <a-camera position="0 3 0">
             <a-cursor color="#ff0000">
         </a-camera>
-        <a-sky src="PANO_20131018_125514.jpg" rotation="0 -45 0"></a-sky>
+        <a-sky src="berlin.jpg" rotation="0 -45 0"></a-sky>
     </a-scene>
-
-    <script>
-    (function(){
-        var box = document.querySelector('#mybox');
-        box.addEventListener('mouseenter', function () {
-            box.setAttribute('color', '#ff0000');
-        });
-
-        box.addEventListener('mouseleave', function() {
-            box.setAttribute('color', '#6173F4');
-        });
-    })();
-    </script>
   </body>
 </html>
